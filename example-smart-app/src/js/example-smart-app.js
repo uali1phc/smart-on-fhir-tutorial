@@ -55,7 +55,7 @@
 		  
 		  for (var i=0;i<algLen;i++)
 		  {
-			  allergytable+="<div>" + alg[i].join(' ') + "</div>"
+			  allergytable+="<div>" + alg[i][0] + "</div>"
 			  
 		  }
 		  
