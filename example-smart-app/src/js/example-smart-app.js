@@ -55,7 +55,8 @@
 		  
 		  for (var i=0;i<algLen;i++)
 		  {
-			  allergytable+="<div>" + alg[i].category[0] + "</div>"
+			if( typeof(alg[i].category[0])=="string" && typeof(alg[i].code.text)=="string")
+				allergytable+="<div>" + alg[i].category[0] : alg[i].code.text  + "</div>"
 			  
 		  }
 		  
