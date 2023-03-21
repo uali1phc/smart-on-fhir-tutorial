@@ -48,7 +48,7 @@
           p.gender = gender;
           p.fname = fname;
           p.lname = lname;		  
-          p.temperature = temperature;
+          p.temperature = getQuantityValueAndUnit(temperature[0]);
           p.height = getQuantityValueAndUnit(height[0]);
 
           if (typeof systolicbp != 'undefined')  {
