@@ -55,7 +55,7 @@
 		  
 		  for (var i=0;i<algLen;i++)
 		  {
-			  allergytable+="<div>" + alg[i] + "</div>"
+			  allergytable+="<div>" + alg[i].join(' ') + "</div>"
 			  
 		  }
 		  
@@ -147,7 +147,7 @@
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);	
-    $('#temperature').html(p.temperature);
+    $('#temperature').html('');//p.temperature
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#allergytable').html(p.allergytable);
