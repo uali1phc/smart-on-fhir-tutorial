@@ -47,7 +47,8 @@
           p.birthdate = patient.birthDate;
           p.gender = gender;
           p.fname = fname;
-          p.lname = lname;
+          p.lname = lname;		  
+          p.temperature = temperature;
           p.height = getQuantityValueAndUnit(height[0]);
 
           if (typeof systolicbp != 'undefined')  {
@@ -84,6 +85,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+	  temperature: {value: ''},
     };
   }
 
@@ -124,7 +126,8 @@
     $('#birthdate').html(p.birthdate);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
-    $('#diastolicbp').html(p.diastolicbp);
+    $('#diastolicbp').html(p.diastolicbp);	
+    $('#temperature').html(p.temperature);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
   };
